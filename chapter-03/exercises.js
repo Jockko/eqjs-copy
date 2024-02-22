@@ -2,24 +2,60 @@
 // min /////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function min() {
-
+//Write a function min that takes two arguments and returns their minimum.
+function min(num1, num2) {
+//if the first number is less than the second return that number
+if(num1 < num2){
+return num1
+}
+else if(num2 < num1){
+  return num2;
+}
+else if(num1 === num2){
+  return 0;
+}
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // isEven //////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function isEven() {
-
+//Write a function countBs that takes a string as its only argument and 
+//returns a number that indicates how many uppercase “B” characters there are in the string.
+function isEven(string) {
+  //create a number variable set to 0 and increase it based on how many upperCase B's there are
+let num = 0;
+//loop through the string
+for(let i = 0; i < string.length; i++){
+  //check if each string is a capital B or not
+  if(string[i] === "B" ){
+    num += 1;
+  }
+}
+return num;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // countChars //////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countChars() {
+//write a function called countChar that behaves like countBs, 
+//except it takes a second argument that indicates the character that is to be counted
+function countChars(string, char) {
+//keep count of the char's in string
+//create count variable
+let count = 0;
+//loop through the string
+for(let i = 0; i < string.length; i++){
+  //check how many "char" there are
+  //if current string matches char
+  if(string[i] === char){
+    //implement count
+    count++;
+  }
 
+}
+return count;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
