@@ -19,20 +19,8 @@ else if(num1 === num2){
 ////////////////////////////////////////////////////////////////////////////////
 // isEven //////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-
-//Write a function countBs that takes a string as its only argument and 
-//returns a number that indicates how many uppercase “B” characters there are in the string.
 function isEven(string) {
-  //create a number variable set to 0 and increase it based on how many upperCase B's there are
-let num = 0;
-//loop through the string
-for(let i = 0; i < string.length; i++){
-  //check if each string is a capital B or not
-  if(string[i] === "B" ){
-    num += 1;
-  }
-}
-return num;
+  
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -53,7 +41,7 @@ for(let i = 0; i < string.length; i++){
     //implement count
     count++;
   }
-
+  
 }
 return count;
 }
@@ -62,8 +50,20 @@ return count;
 // countBs /////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countBs() {
 
+//Write a function countBs that takes a string as its only argument and 
+//returns a number that indicates how many uppercase “B” characters there are in the string.
+function countBs(string) {
+  //create a number variable set to 0 and increase it based on how many upperCase B's there are
+  let num = 0;
+  //loop through the string
+  for(let i = 0; i < string.length; i++){
+    //check if each string is a capital B or not
+    if(string[i] === "B" ){
+      num += 1;
+    }
+  }
+  return num;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
